@@ -40,7 +40,7 @@ class Login extends Component {
                 if(res.code==='200110') {
                     message.success('登录成功！');
                     localStorage.setItem('token',res.data.token);
-                    localStorage.setItem('timeout',new Date(moment().add(1, 'hour')));
+                    localStorage.setItem('timeout',new Date(moment().add(1, 'days')));
                     this.props.history.push('/');
                 }
                 if(res.code!=='200110') {
