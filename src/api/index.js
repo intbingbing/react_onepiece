@@ -1,9 +1,9 @@
 import axios from 'axios'
 import qs from 'qs'
 
-const baseUrl='http://118.25.16.102:3000';
+const baseUrl='http://localhost:3030';
 const loginUrl='/react/auth';
-const weatherUrl='/api/proxy/weather';
+const echartsKLineUrl='/react/echarts_k_line';
 
 axios.defaults.withCredentials = true;
 
@@ -26,8 +26,8 @@ instance.interceptors.response.use(function (response) {
     return Promise.reject(error);
 });
 
-export async function getWeather(){
-    return (await instance.get(`${baseUrl}${weatherUrl}`)).data
+export async function getEchartsKLine(){
+    return (await instance.get(`${baseUrl}${echartsKLineUrl}`)).data
 }
 
 export async function login(params){

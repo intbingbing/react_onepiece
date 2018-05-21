@@ -15,7 +15,13 @@ export default class HomePage extends React.Component {
         this.state = {
             collapsed: false,
             width: 200,
-            logo:xiao
+            logo:xiao,
+            routeMapName:{
+                user:'用户',
+                home:'主页',
+                charts:'图表',
+                k_line_charts:'K线图',
+            }
         };
     }
     componentWillMount() {
@@ -35,6 +41,9 @@ export default class HomePage extends React.Component {
     };
 
     render() {
+        let breadcrumb = window.location.pathname.split('/').slice(2);
+        let mapName = breadcrumb.map(value => this.state.routeMapName[value]);
+        console.log(mapName);
         return (
             <Router>
                 <Layout className="wrapper">
