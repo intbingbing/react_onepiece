@@ -1,0 +1,36 @@
+.user-info {
+    height: calc(100% + 48px);
+    margin: -24px;
+    // display: flex;
+    // flex-direction: column;
+    .cover {
+        height: 25%;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100% 100%;
+    }
+    .body {
+        height: 75%;
+        position: relative;
+        .ant-avatar.ant-avatar-square {
+            font-size: 84px;
+            width: 168px;
+            height: 168px;
+            line-height: 168px;
+            position: absolute;
+            left: 25px;
+            top: -25px;
+            .ant-avatar-string {
+                line-height: 168px;
+                left: calc(50% - 42px);
+            }
+        }
+    }
+}
+
+.avatar-edit-modal > div.ant-modal {
+    width: 400px !important;
+    button {
+        width: 220px;
+    }
+}

@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
-import "./index.less";
+import "./NotFound.less";
 
-export default class Home extends Component {
+export default class NotFound extends Component {
     constructor(props) {
-        super(props);
+        super(props)
     }
+    
     componentWillMount() {
-
     }
 
     componentDidMount() {
-
     }
 
     render() {
         return (
-            <div className='home'>
-                Home
+            <div>
+                <h1>404</h1>
             </div>
         );
     }

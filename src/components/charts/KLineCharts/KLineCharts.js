@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import "./index.less";
+import "./KLineCharts.less";
 import * as echarts from 'echarts/lib/echarts';
-import 'echarts/lib/chart/candlestick';
-import 'echarts/lib/chart/line';
-import 'echarts/lib/component/tooltip';
-import 'echarts/lib/component/title';
-import 'echarts/lib/component/toolbox';
-import 'echarts/lib/component/dataZoom';
+import '../../../../node_modules/_echarts@4.1.0@echarts/lib/chart/candlestick';
+import '../../../../node_modules/_echarts@4.1.0@echarts/lib/chart/line';
+import '../../../../node_modules/_echarts@4.1.0@echarts/lib/component/tooltip';
+import '../../../../node_modules/_echarts@4.1.0@echarts/lib/component/title';
+import '../../../../node_modules/_echarts@4.1.0@echarts/lib/component/toolbox';
+import '../../../../node_modules/_echarts@4.1.0@echarts/lib/component/dataZoom';
 
 export default class KLineCharts extends Component {
     constructor(props) {
         super(props);
     }
     componentWillMount() {
-
+        console.log('KLineCharts componentWillMount')
     }
 
     componentDidMount() {

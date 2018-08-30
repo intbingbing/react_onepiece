@@ -1,5 +1,5 @@
 @aside-theme-bg : #002140;
-.wrapper {
+.homepage-wrapper {
 	height: 100%;
 	.header{
 		padding-left: 0;
@@ -16,7 +16,11 @@
 				height: 54px;
 				transition: all .2s;
 			}
-		}
+        }
+        .ant-badge {
+            right: 24px;
+            position: absolute;
+        }
 	}
 	.trigger{
 		position: fixed;
@@ -31,4 +35,19 @@
 		z-index: 1;
 		transition: all .2s;
 	}
+}
+
+#root > .ant-spin-nested-loading {
+    height: 100%;
+    & > div > .ant-spin {
+        max-height: inherit;
+        background-color: rgba(0, 0, 0, 0.65);
+        color: #fff;
+        .ant-spin-dot i {
+            background-color: #fff;
+        }
+    }
+    & > .ant-spin-container {
+        height: 100%;
+    }
 }
